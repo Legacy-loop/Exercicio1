@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Catálogo</title>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ body {
+ font-family: Roboto, sans-serif;
+ background: #fafafa;
+ }
+ header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: #123502;
+ color: white;
+ padding: 1rem 2rem;
+ }
+ .produtos {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1rem;
+ padding: 2rem;
+ }
+ .card {
+ background: white;
+ width: calc(33.33% - 1rem);
+ border: 1px solid #ddd;
+ padding: 1rem;
+ text-align: center;
+ transition: transform 0.2s;
+ }
+ .card:hover {
+ transform: scale(1.05);
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ }
+ @media (max-width: 768px) {
+ .card {
+ width: calc(50% - 1rem);
+ }
+ }
+ @media (max-width: 480px) {
+ .card {
+ width: 100%;
+ }
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Minha Loja</h1>
+ <input type="text" placeholder="Buscar produtos...">
+ </header>
+ <section class="produtos">
+ <div class="card">
+ <img src="https://via.placeholder.com/150" alt="Produto 1">
+ <h3>Iphone 16</h3>
+ <p>R$ 5.999,90</p>
+ </div>
+ <div class="card">
+ <img src="https://via.placeholder.com/150" alt="Produto 2">
+ <h3>Iphone 16 Pro</h3>
+ <p>R$ 6.999,90</p>
+ </div>
+ <div class="card">
+ <img src="https://via.placeholder.com/150" alt="Produto 3">
+ <h3>Macbook</h3>
+ <p>R$ 10.999,90</p>
+ </div>
+ </section>
+</body>
+</html>
